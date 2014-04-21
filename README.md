@@ -1,13 +1,15 @@
-# geomoment
+# geomoment-light
 
 [![NPM](https://nodei.co/npm/geomoment.png)](https://nodei.co/npm/geomoment/)
 
 This library is basically just a thin, sugary wrapper over [moment.js](http://momentjs.com/) and [moment-timezone](http://momentjs.com/timezone/).
 
+**THIS IS A FORK** of the original [geomoment](https://github.com/goodeggs/geomoment) that doesn't compile moment.js library in.
+
 ## What can it do?
 
 ```javascript
-var geomoment = require('geomoment');
+var geomoment = require('geomoment-light');
 
 // Timezone sugar
 geomoment.pacific('2013-01-01', 'YYYY-MM-DD')
@@ -37,7 +39,7 @@ To use the module on the client, include the following scripts:
 ```html
 <script src="moment.js" />
 <script src="moment-timezone.js" />
-<script src="geomoment.js" />
+<script src="geomoment-light.js" />
 ```
 
 Then you have the following objects available:
@@ -47,7 +49,7 @@ window.moment
 window.geomoment
 ```
 
-Also recommended: [geomoment-angular](https://github.com/goodeggs/geomoment-angular) for use in an [angular.js](http://angularjs.org) project.
+Also recommended: [geomoment-angular-light](https://github.com/alexgorbatchev/geomoment-angular-light) for use in an [angular.js](http://angularjs.org) project.
 
 ## Date Formats
 
@@ -137,3 +139,68 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+
+<table>
+  <tr>
+    <th>day</th>
+    <td>2013-12-06</td>
+    <td><code>YYYY-MM-DD</code></td>
+  </tr>
+  <tr>
+    <th>time</th>
+    <td>15:12</td>
+    <td><code>HH:MM</code></td>
+  </tr>
+  <tr>
+    <th>dayTime</th>
+    <td>2013-12-06 15:12</td>
+    <td><code>YYYY-MM-DD HH:MM</code></td>
+  </tr>
+  <tr>
+    <th>iCalDay</th>
+    <td>20131206</td>
+    <td><code>YYYYMMDD</code></td>
+  </tr>
+  <tr>
+    <th>iCalTime</th>
+    <td>152207</td>
+    <td><code>HHmmss</code></td>
+  </tr>
+  <tr>
+    <th>iCalDayTime</th>
+    <td>20131206T152207</td>
+    <td><code>YYYYMMDD[T]HHmmss</code></td>
+  </tr>
+  <tr>
+    <th>slashDay</th>
+    <td>12/6/2013</td>
+    <td><code>M/D/YYYY</code></td>
+  </tr>
+  <tr>
+    <th>shortSlashDay</th>
+    <td>12/6</td>
+    <td><code>M/D</code></td>
+  </tr>
+  <tr>
+    <th>shortDay</th>
+    <td>Friday, Dec 6</td>
+    <td><code>dddd, MMM D</code></td>
+  </tr>
+  <tr>
+    <th>abbrvDay</th>
+    <td>Fri Dec 6</td>
+    <td><code>ddd MMM D</code></td>
+  </tr>
+  <tr>
+    <th>longDay</th>
+    <td>Friday, December 6, 2013</td>
+    <td><code>dddd, MMMM D, YYYY</code></td>
+  </tr>
+  <tr>
+    <th>weekday</th>
+    <td>Friday</td>
+    <td><code>dddd</code></td>
+  </tr>
+</table>
+

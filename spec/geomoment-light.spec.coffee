@@ -3,7 +3,7 @@ geomoment = require('../lib') moment
 
 {expect} = require 'chai'
 
-describe 'geomoment', ->
+describe 'geomoment-light', ->
   describe 'timezones', ->
 
     describe 'eastern', ->
