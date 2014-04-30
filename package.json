@@ -1,6 +1,6 @@
 {
   "name": "geomoment-light",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "moment-timezone, if moment-timezone forced you to choose a particular moment in time. also, some extra sugar.",
   "main": "lib/index.js",
   "scripts": {
@@ -27,7 +27,7 @@
     "url": "https://github.com/alexgorbatchev/geomoment-light/issues"
   },
   "peerDependencies": {
-    "moment-timezone": ">=0.0.3",
+    "moment-timezone": ">=0.0.6",
     "moment": "2.x.x"
   },
   "devDependencies": {

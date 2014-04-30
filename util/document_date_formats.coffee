@@ -3,12 +3,12 @@ path = require 'path'
 moment = require 'moment-timezone'
 geomoment = require('..') moment
 
-now = geomoment 'Fri Dec 06 2013 15:22:07 GMT-0800 (PST)'
+now = geomoment new Date('Fri Dec 06 2013 15:22:07 GMT-0800 (PST)')
 filename = path.resolve(__dirname, '..', 'README.md')
 
 readme = fs.readFileSync(filename, encoding: 'utf-8').split('\n')
-before = readme[0..readme.indexOf('## date formats')]
-after = readme[readme.indexOf('## license')..]
+before = readme[0..readme.indexOf('## Date formats')]
+after = readme[readme.indexOf('## License')..]
 
 readme = before
 readme.push ''

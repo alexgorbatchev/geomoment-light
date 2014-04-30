@@ -33,7 +33,7 @@ geomoment().dayString(); // => today's date
 
 ## Using it on the client
 
-`geomoment` is client friendly. For now, only USA timezones are included (patch welcome for other zones).
+`geomoment-light` is client friendly. For now, only USA timezones are included (patch welcome for other zones).
 To use the module on the client, include the following scripts:
 
 ```html
@@ -61,13 +61,13 @@ Also recommended: [geomoment-angular-light](https://github.com/alexgorbatchev/ge
   </tr>
   <tr>
     <th>time</th>
-    <td>15:12</td>
-    <td><code>HH:MM</code></td>
+    <td>15:22</td>
+    <td><code>HH:mm</code></td>
   </tr>
   <tr>
     <th>dayTime</th>
-    <td>2013-12-06 15:12</td>
-    <td><code>YYYY-MM-DD HH:MM</code></td>
+    <td>2013-12-06 15:22</td>
+    <td><code>YYYY-MM-DD HH:mm</code></td>
   </tr>
   <tr>
     <th>iCalDay</th>
@@ -113,6 +113,11 @@ Also recommended: [geomoment-angular-light](https://github.com/alexgorbatchev/ge
     <th>weekday</th>
     <td>Friday</td>
     <td><code>dddd</code></td>
+  </tr>
+  <tr>
+    <th>unixDate</th>
+    <td>Fri Dec 06 2013 15:22:07</td>
+    <td><code>ddd MMM DD YYYY HH:mm:ss</code></td>
   </tr>
 </table>
 
@@ -149,13 +154,13 @@ THE SOFTWARE.
   </tr>
   <tr>
     <th>time</th>
-    <td>15:12</td>
-    <td><code>HH:MM</code></td>
+    <td>15:22</td>
+    <td><code>HH:mm</code></td>
   </tr>
   <tr>
     <th>dayTime</th>
-    <td>2013-12-06 15:12</td>
-    <td><code>YYYY-MM-DD HH:MM</code></td>
+    <td>2013-12-06 15:22</td>
+    <td><code>YYYY-MM-DD HH:mm</code></td>
   </tr>
   <tr>
     <th>iCalDay</th>
@@ -202,5 +207,33 @@ THE SOFTWARE.
     <td>Friday</td>
     <td><code>dddd</code></td>
   </tr>
+  <tr>
+    <th>unixDate</th>
+    <td>Fri Dec 06 2013 15:22:07</td>
+    <td><code>ddd MMM DD YYYY HH:mm:ss</code></td>
+  </tr>
 </table>
 
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2013 Good Eggs Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
